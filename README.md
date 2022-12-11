@@ -11,8 +11,10 @@ A mobile app for Restaurants Managers in BC. Restaurant owners will use this app
 6. "Sign Out": Allows user to sign out of account and return to login page.
 
 ## Running & Viewing Application
-The repository includes an apk file that can be loaded onto an android 8.0+ phone and used.
-The repository also includes a video demonstrating the functionality of the prototype
+There are multiple ways of viewing, interacting with and running the application:
+1. You can interact with the application in a web browser using the following link: https://appetize.io/app/22qtxqomuytklp3x7evj7hy4si
+2. The repository includes an apk file that can be loaded onto an android 8.0+ phone and used.
+3. The repository also includes a video demonstrating the functionality of the prototype
 
 ## Demo
 
