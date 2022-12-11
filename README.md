@@ -16,3 +16,4 @@ The repository also includes a video demonstrating the functionality of the prot
 
 ## Demo
 
+![RestaurantSafe](https://github.com/Ritvikshah2000/RestaurantSafe/blob/main/demo.gif)
