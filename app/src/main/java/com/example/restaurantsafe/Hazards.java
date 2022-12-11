@@ -9,15 +9,15 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Profile extends AppCompatActivity {
+public class Hazards extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.profile);
+        setContentView(R.layout.hazards);
 
-        Button profileBtn = (Button) findViewById(R.id.save_btn);
+        Button backBtn = (Button) findViewById(R.id.back_btn);
 
-        btnPress(profileBtn, LoggedInMenu.makeIntent(Profile.this));
+        btnPress(backBtn, LoggedInMenu.makeIntent(Hazards.this));
     }
 
     private void btnPress(Button button, final Intent intent) {
@@ -26,13 +26,13 @@ public class Profile extends AppCompatActivity {
             public void onClick(View v) {
                 finish();
                 startActivity(intent);
-                Toast.makeText(getBaseContext(), "Profile Changes Saved!" , Toast.LENGTH_SHORT ).show();
             }
         });
     }
 
     public static Intent makeIntent(Context context) {
-        return new Intent(context, Profile.class);
+        return new Intent(context, Hazards.class);
     }
 
 }
+

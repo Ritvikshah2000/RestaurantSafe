@@ -21,6 +21,7 @@ public class LoggedInMenu extends AppCompatActivity {
         Button signOutBtn = (Button) findViewById(R.id.sign_out_btn);
         Button profileBtn = (Button) findViewById(R.id.profile_btn);
         Button askUsBtn = (Button) findViewById(R.id.askus_btn);
+        Button hazardsBtn = (Button) findViewById(R.id.hazards_btn);
 
         int images[] = {R.drawable.slide1, R.drawable.slide2, R.drawable.slide3, R.drawable.slide4, R.drawable.slide5, R.drawable.slide6};
 
@@ -33,6 +34,7 @@ public class LoggedInMenu extends AppCompatActivity {
         btnPress(profileBtn, Profile.makeIntent(LoggedInMenu.this));
         btnPress(signOutBtn, SignOut.makeIntent(LoggedInMenu.this));
         btnPress(askUsBtn, AskUs.makeIntent(LoggedInMenu.this));
+        btnPress(hazardsBtn, Hazards.makeIntent(LoggedInMenu.this));
     }
 
     private void btnPress(Button button, final Intent intent) {

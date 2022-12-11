@@ -45,6 +45,9 @@
         <activity
             android:name=".AskUs"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".Hazards"
+            android:screenOrientation="portrait" />
 
 
     </application>
