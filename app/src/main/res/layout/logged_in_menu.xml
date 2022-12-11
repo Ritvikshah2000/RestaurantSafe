@@ -67,6 +67,12 @@
         </ViewFlipper>
 
         <Button
+            android:id="@+id/askus_btn"
+            android:layout_width="293dp"
+            android:layout_height="70dp"
+            android:text="Ask Us" />
+
+        <Button
             android:id="@+id/profile_btn"
             android:layout_width="293dp"
             android:layout_height="70dp"

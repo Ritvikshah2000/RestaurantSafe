@@ -42,6 +42,9 @@
         <activity
             android:name=".SignOut"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".AskUs"
+            android:screenOrientation="portrait" />
 
 
     </application>

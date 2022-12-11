@@ -11,7 +11,6 @@ import android.widget.ViewFlipper;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class LoggedInMenu extends AppCompatActivity {
-    private static boolean isPremiumUser = false;
 
     ViewFlipper v_flipper;
 
@@ -21,6 +20,7 @@ public class LoggedInMenu extends AppCompatActivity {
         setContentView(R.layout.logged_in_menu);
         Button signOutBtn = (Button) findViewById(R.id.sign_out_btn);
         Button profileBtn = (Button) findViewById(R.id.profile_btn);
+        Button askUsBtn = (Button) findViewById(R.id.askus_btn);
 
         int images[] = {R.drawable.slide1, R.drawable.slide2, R.drawable.slide3, R.drawable.slide4, R.drawable.slide5, R.drawable.slide6};
 
@@ -32,6 +32,7 @@ public class LoggedInMenu extends AppCompatActivity {
 
         btnPress(profileBtn, Profile.makeIntent(LoggedInMenu.this));
         btnPress(signOutBtn, SignOut.makeIntent(LoggedInMenu.this));
+        btnPress(askUsBtn, AskUs.makeIntent(LoggedInMenu.this));
     }
 
     private void btnPress(Button button, final Intent intent) {
@@ -45,10 +46,6 @@ public class LoggedInMenu extends AppCompatActivity {
 
     public static Intent makeIntent(Context context) {
         return new Intent(context, LoggedInMenu.class);
-    }
-
-    public static void setIsPremiumUser(boolean isPremiumUser) {
-        LoggedInMenu.isPremiumUser = isPremiumUser;
     }
 
     public void flipperImages(int image){
