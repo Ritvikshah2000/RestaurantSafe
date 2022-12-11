@@ -26,18 +26,9 @@
                 android:value="" />
         </activity>
 
+
         <activity
-            android:name=".AnalyzeMeal"
-            android:screenOrientation="portrait"
-            android:configChanges="orientation|keyboardHidden|screenSize" />
-        <activity
-            android:name=".ViewPrevReports"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".ViewPrevMeals"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Help"
+            android:name=".Profile"
             android:screenOrientation="portrait" />
         <activity
             android:name=".LoggedInMenu"
@@ -51,14 +42,8 @@
         <activity
             android:name=".SignOut"
             android:screenOrientation="portrait" />
-        <activity
-            android:name=".ViewSpecificReport"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name=".SubscribePremium"
-            android:screenOrientation="portrait" >
-        </activity>
+
+
     </application>
 
 </manifest>
