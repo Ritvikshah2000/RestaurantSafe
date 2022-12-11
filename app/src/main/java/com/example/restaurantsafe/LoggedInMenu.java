@@ -19,10 +19,10 @@ public class LoggedInMenu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.logged_in_menu);
-        Button helpBtn = (Button) findViewById(R.id.profile_btn);
         Button signOutBtn = (Button) findViewById(R.id.sign_out_btn);
+        Button profileBtn = (Button) findViewById(R.id.profile_btn);
 
-        int images[] = {R.drawable.slide1, R.drawable.slide2, R.drawable.slide3, R.drawable.slide4};
+        int images[] = {R.drawable.slide1, R.drawable.slide2, R.drawable.slide3, R.drawable.slide4, R.drawable.slide5, R.drawable.slide6};
 
         v_flipper = findViewById(R.id.v_flipper);
 
@@ -30,7 +30,7 @@ public class LoggedInMenu extends AppCompatActivity {
             flipperImages(image);
         }
 
-//        btnPress(helpBtn, Profile.makeIntent(LoggedInMenu.this));
+        btnPress(profileBtn, Profile.makeIntent(LoggedInMenu.this));
 //        btnPress(signOutBtn, SignOut.makeIntent(LoggedInMenu.this));
     }
 
@@ -56,7 +56,7 @@ public class LoggedInMenu extends AppCompatActivity {
         imageView.setBackgroundResource(image);
 
         v_flipper.addView(imageView);
-        v_flipper.setFlipInterval(4000); //4 sec
+        v_flipper.setFlipInterval(2000); //2 sec
         v_flipper.setAutoStart(true);
 
         //animation
