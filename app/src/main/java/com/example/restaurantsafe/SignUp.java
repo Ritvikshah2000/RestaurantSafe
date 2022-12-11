@@ -16,7 +16,7 @@ public class SignUp  extends AppCompatActivity {
 
         Button signUpBtn = (Button) findViewById(R.id.sign_up_btn);
 
-        btnPress(signUpBtn, LoggedInMenu.makeIntent(SignUp.this));
+        btnPress(signUpBtn, SignIn.makeIntent(SignUp.this));
     }
 
     private void btnPress(Button button, final Intent intent) {
