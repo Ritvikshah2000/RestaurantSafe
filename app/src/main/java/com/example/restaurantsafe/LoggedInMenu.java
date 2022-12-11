@@ -31,7 +31,7 @@ public class LoggedInMenu extends AppCompatActivity {
         }
 
         btnPress(profileBtn, Profile.makeIntent(LoggedInMenu.this));
-//        btnPress(signOutBtn, SignOut.makeIntent(LoggedInMenu.this));
+        btnPress(signOutBtn, SignOut.makeIntent(LoggedInMenu.this));
     }
 
     private void btnPress(Button button, final Intent intent) {
